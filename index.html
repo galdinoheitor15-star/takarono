@@ -147,12 +147,12 @@
       </fieldset>
       <div class="fs">
         <label for="nome">Seu nome</label>
-        <input class="field" id="nome" autocomplete="name" placeholder="Como podemos te chamar?">
+        <input maxlength="80" class="field" id="nome" autocomplete="name" placeholder="Como podemos te chamar?">
       </div>
       <div class="fs" id="addrBox">
         <label for="rua">Endereço de entrega</label>
-        <input class="field" id="rua" autocomplete="street-address" placeholder="Rua, número e bairro">
-        <input class="field" id="ref" placeholder="Ponto de referência (opcional)">
+        <input maxlength="120" class="field" id="rua" autocomplete="street-address" placeholder="Rua, número e bairro">
+        <input maxlength="100" class="field" id="ref" placeholder="Ponto de referência (opcional)">
       </div>
       <fieldset class="fs" style="border:0">
         <legend>Pagamento</legend>
@@ -161,11 +161,11 @@
           <input type="radio" name="pag" id="p2" value="Cartão"><label for="p2">Cartão</label>
           <input type="radio" name="pag" id="p3" value="Dinheiro"><label for="p3">Dinheiro</label>
         </div>
-        <input class="field hidden" id="troco" inputmode="decimal" placeholder="Troco para quanto? (opcional)" style="margin-top:8px">
+        <input maxlength="12" class="field hidden" id="troco" inputmode="decimal" placeholder="Troco para quanto? (opcional)" style="margin-top:8px">
       </fieldset>
       <div class="fs">
         <label for="obs">Observações</label>
-        <textarea class="field" id="obs" placeholder="Ex.: sem cebolinha, mais shoyu, hashi extra…"></textarea>
+        <textarea maxlength="300" class="field" id="obs" placeholder="Ex.: sem cebolinha, mais shoyu, hashi extra…"></textarea>
       </div>
     </form>
   </div>
